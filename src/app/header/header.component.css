@@ -1,5 +1,5 @@
 div{
-  background-color: #D9D9D9;
+  background-color: #24effca6;
   width: 100%;
   height: 60px;
 }
@@ -18,13 +18,13 @@ div{
   float: right;
   margin-top: 20px;
   margin-right: 20px;
-  background-color: #24EFFC;
+  background-color: white;
   box-shadow: 6px 4px 6px 0px rgba(0,0,0,0.1);
   border-radius: 5px;
   cursor: pointer;
   width: 70px;
   color: white;
-  border-color: #24EFFC;
+  border-color: white;
   height: 30px;
   max-width: 5%;
 }

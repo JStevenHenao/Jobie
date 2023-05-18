@@ -1,0 +1,68 @@
+div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  position: relative; /* Cambiado a "relative" en lugar de "absolute" */
+}
+
+.inputSearch {
+  height: 25px;
+  margin-top: 20px;
+  width: 500px;
+  border-radius: 50px;
+  background-color: #d9d9d97d;
+  padding: 10px;
+  border: none;
+  outline: none;
+}
+
+button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 40px;
+  background-color: #24EFFC;
+  border-radius: 0 50px 50px 0;
+  height: 45px;
+  margin-top: 20px;
+  border-color: #24EFFC;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  width: 460px;
+  background-color: #d9d9d97d;
+  border-radius: 0 0 10px 10px;
+  top: calc(100% + 5px); /* Alineado debajo del campo de entrada con un margen de 5px */
+  left: 0;
+  float: right;
+  margin-right: 20PX;
+  opacity: 0; /* Inicialmente, la lista está oculta */
+  visibility: hidden; /* Inicialmente, la lista no es visible */
+  transition: opacity 0.3s ease, visibility 0s linear 0.3s; /* Transición de opacidad y visibilidad */
+
+
+}
+
+li {
+  padding: 10px;
+  cursor: pointer;
+}
+
+li:hover {
+  background-color: #24EFFC;
+  color: white;
+}
+
+ul.show {
+  opacity: 1; /* La lista se muestra con opacidad completa */
+  visibility: visible; /* La lista se vuelve visible */
+  transition-delay: 0s; /* No hay retraso en la transición de visibilidad */
+
+}

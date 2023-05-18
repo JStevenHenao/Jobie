@@ -1,10 +1,15 @@
 <div>
- <img class="logo" src="assets/img/jobie.png" alt="logo">
+ <img class="logo" src="assets/img/companies/jobie.png" alt="logo">
   <!--<button ><img src="assets/img/user.png" class="user" alt="user"></button>-->
 
-  <button class="login" mat-button [matMenuTriggerFor]="menu"><img src="assets/img/user.png" class="user" alt="user"></button>
+  <button class="login" mat-button [matMenuTriggerFor]="menu"><img src="assets/img/icons/user.png" class="user" alt="user"></button>
     <mat-menu #menu="matMenu">
-  <button class="option"mat-menu-item>Log-in</button>
+  <button class="option"mat-menu-item  (click)="modalService.open('modal-2')">Log-in</button>
   <button class="option"mat-menu-item>Registrer</button>
 </mat-menu>
+<login-modal id="modal-2">
+
+</login-modal>
 </div>
+
+

@@ -1,0 +1,113 @@
+login-modal {
+  /* modals are hidden by default */
+  display: none;
+  .login-modal {
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, .75);
+    padding: 40px;
+
+  }
+
+  .login-modal-body {
+      padding: 20px;
+      background: #fff;
+      height: 400px;
+      width: 350px;
+      border-radius: 20px;
+      text-align: center;
+
+  }
+}
+
+body.login-modal-open {
+  /* body overflow is hidden to hide main scrollbar when modal window is open */
+  overflow: hidden;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.close{
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  margin-right: auto;
+}
+
+.Title{
+  margin: 0px !important;
+  font-size: 20px !important;
+  font-weight: bold !important;
+  text-align: right !important;
+  margin-right: auto !important;
+}
+.close:hover {
+  transform: scale(1.1);
+}
+
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+label {
+  color: black;
+}
+
+input {
+  padding: 5px;
+  border: 1px solid #ccc;
+  width: 70%;
+  border-radius: 50px;
+  background-color: #d9d9d97d;
+  padding: 10px;
+  border: none;
+  outline: none;
+
+}
+
+.label-left {
+  text-align: left;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form{
+  margin-top: 70px;
+  margin-left: 20px;
+}
+
+.logIn{
+  display: flex;
+  margin-top: 20px;
+  margin-right: 20px;
+  background-color: #24EFFC;
+  box-shadow: 0px 4px 6px 0px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  cursor: pointer;
+  color: white;
+  border-color: #24EFFC;
+  height: 30px;
+  width: 70px;
+   font-weight: bold;
+  align-items: center;
+
+}

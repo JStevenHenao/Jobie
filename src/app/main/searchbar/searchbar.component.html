@@ -1,0 +1,11 @@
+<div style="position: relative;">
+  <div>
+    <input matInput [(ngModel)]="searchTerm"  (input)="onSearchInput()" placeholder="Search" class="inputSearch"  (blur)="onInputBlur()">
+    <button>
+      <img src="assets/img/icons/lupa.png" alt="Botón" style="width: 20px; height: 20px; margin: auto; display: block;">
+    </button>
+  </div>
+  <ul *ngIf="searchResults.length > 0" [ngClass]="{'show': searchTerm && searchResults.length > 0}">
+    <li *ngFor="let result of searchResults" (click)="selectResult(result)">{{ result }}</li>
+  </ul>
+</div>
