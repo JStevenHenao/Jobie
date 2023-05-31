@@ -40,49 +40,48 @@
 }
 
 .contenedor {
-  position: relative;
-  overflow: hidden;
-  width: 1500px;
-     display: flex;
+
+  display: flex;
   align-items: center;
-  justify-content: center;
+  overflow-x: auto;
+  max-width: 65%; /* Limita el ancho al 70% de la pantalla */
 }
 
+
 .content-main {
-  position: relative;
-  overflow: hidden;
-  margin-top: 40px;
-    display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
+  width: 100%; /* Ajusta el ancho del contenedor principal según tus necesidades */
+  margin: 0 auto; /* Centra horizontalmente el contenedor principal */
+  margin-top: 60px;
 }
 
 .lista-iconos {
   display: flex;
   list-style: none;
   padding: 0;
-  height: 60px;
   margin: 0;
-  align-content: center;
-  margin: 0px 20px 0px 950px;
-  align-items: center;
-}
+  }
 
+  .contenedor::-webkit-scrollbar {
+    display: none; /* Oculta la barra de desplazamiento en navegadores webkit */
+  }
 .lista-iconos li {
-  margin-right: 10px; /* Espacio entre iconos */
+  margin-right: 20px;
+  width: 60px;
 }
 
-.flecha-derecha {
-  top: 0;
-  right: -30px;
+.button-servicio {
   background-color: transparent;
-  color: white;
-  float: right;
-  font-size: 24px;
-  line-height: 50px; /* Ajusta el valor según la altura de la flecha */
+  border: none;
   cursor: pointer;
-  transition: right 0.3s ease;
+  width: 50px;
+
 }
+
+
 
 .flecha-derecha:hover {
   right: 0;
@@ -92,17 +91,14 @@
   color: #24EFFC;
 }
 
+.flecha-derecha,
 .flecha-izquierda {
-  float: left;
-  top: 0;
-  right: -30px;  /* Ancho de la flecha */
   background-color: transparent;
   color: white;
   font-size: 24px;
-  line-height: 50px; /* Ajusta el valor según la altura de la flecha */
+  line-height: 50px;
   cursor: pointer;
   transition: right 0.3s ease;
-
 }
 
 .flecha-izquierda:hover {

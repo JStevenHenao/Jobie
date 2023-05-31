@@ -12,10 +12,9 @@ import { MatTableModule } from '@angular/material/table';
 import { MatInputModule } from '@angular/material/input';
 import {MatCardModule} from '@angular/material/card';
 import {MatGridListModule} from '@angular/material/grid-list';
-import { MainPageComponent } from './main/pages/main-page.component';
 import { MainModule } from './main/main.module';
 import { ModalLoginComponent } from './modals/modal-login/modal-login.component';
-
+import {HttpClientModule} from "@angular/common/http";
 @NgModule({
   declarations: [
     AppComponent,
@@ -33,6 +32,8 @@ import { ModalLoginComponent } from './modals/modal-login/modal-login.component'
     MatCardModule,
     MatGridListModule,
     MainModule,
+    HttpClientModule
+
 
 
   ],

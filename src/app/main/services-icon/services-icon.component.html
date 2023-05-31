@@ -1,23 +1,17 @@
 <div  class="content-main">
 
-<div #flechaIzquierda class="flecha-izquierda" (click)="desplazarIzquierda()">&laquo;</div>
+  <div #flechaIzquierda class="flecha-izquierda" (click)="desplazarIzquierda()">&laquo;</div>
 <div #contenedor class="contenedor">
 
-
   <ul #listaIconos class="lista-iconos">
-    <li class="div2" *ngFor="let imagen of imagenes; let i = index">
-      <i>
-        <button style="width:  60px;
-          margin-left: 36.2px;
-          height: 40px;background-color: transparent;    border: none;    cursor: pointer;"  matTooltip={{imagen.text}}>
-          <img class="icon-service" [src]="imagen.imagenUrl" [ngClass]="{'oscura': imagen.seleccionada}" (click)="seleccionarImagen(i)">
-          <h5 class="name-service" [ngClass]="{'oscura': imagen.seleccionada}" (click)="seleccionarImagen(i)">{{imagen.text}}</h5>
-          <div class="linea" *ngIf="imagen.seleccionada" [class.seleccionada]="imagen.seleccionada"></div>
-        </button>
-      </i>
+    <li *ngFor="let service of services; let i = index">
+      <button class="button-servicio" matTooltip={{service.name}} (click)="seleccionarImagen(i)">
+        <img class="icon-service" [src]="service.icon" [ngClass]="{'oscura': service.selected}">
+        <h5 class="name-service" [ngClass]="{'oscura': service.selected}">{{service.name}}</h5>
+        <div class="linea" *ngIf="service.selected" [class.seleccionada]="service.selected"></div>
+      </button>
     </li>
   </ul>
-
 </div>
 <div #flechaDerecha class="flecha-derecha" (click)="desplazarDerecha()">&raquo;</div>
 
